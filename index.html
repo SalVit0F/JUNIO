@@ -1,0 +1,242 @@
+<html><head><base href="https://chronicles-of-eldoria.com/lancamentos-recentes">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lançamentos Recentes - Game Launch Hub</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    header {
+        background-color: #1e1e1e;
+        padding: 20px 0;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        font-size: 2em;
+        font-weight: bold;
+        color: #00ff00;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+    nav ul li {
+        margin-left: 20px;
+    }
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.1em;
+        transition: color 0.3s;
+    }
+    nav ul li a:hover {
+        color: #00ff00;
+    }
+    .page-title {
+        font-size: 2.5em;
+        color: #00ff00;
+        text-align: center;
+        margin: 40px 0;
+    }
+    .game-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+    }
+    .game-card {
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .game-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,255,0,0.2);
+    }
+    .game-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .game-info {
+        padding: 20px;
+    }
+    .game-title {
+        font-size: 1.5em;
+        margin-top: 0;
+        color: #00ff00;
+    }
+    .game-details {
+        font-size: 0.9em;
+        color: #cccccc;
+        margin-bottom: 10px;
+    }
+    .game-description {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+    .read-more {
+        display: inline-block;
+        margin-top: 10px;
+        color: #00ff00;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .read-more:hover {
+        text-decoration: underline;
+    }
+    footer {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 50px;
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Game Launch Hub</div>
+                <ul>
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/lancamentos-recentes">Lançamentos Recentes</a></li>
+                    <li><a href="/futuros-lancamentos">Futuros Lançamentos</a></li>
+                    <li><a href="/analises">Análises</a></li>
+                    <li><a href="/noticias">Notícias</a></li>
+                    <li><a href="/comunidade">Comunidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Lançamentos Recentes</h1>
+        
+        <div class="game-grid">
+            <div class="game-card">
+                <img src="https://example.com/starfield-cover.jpg" alt="Starfield cover art">
+                <div class="game-info">
+                    <h2 class="game-title">Starfield</h2>
+                    <p class="game-details">
+                        Data de Lançamento: 6 de setembro de 2023<br>
+                        Plataformas: PC, Xbox Series X/S
+                    </p>
+                    <p class="game-description">Um RPG espacial ambicioso da Bethesda que permite aos jogadores explorar um universo vasto. Com mais de 1000 planetas para descobrir, uma narrativa épica e uma liberdade sem precedentes, Starfield promete ser uma experiência única para os fãs de ficção científica e RPGs.</p>
+                    <a href="/jogos/starfield" class="read-more">Leia mais</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="https://example.com/baldurs-gate-3-cover.jpg" alt="Baldur's Gate 3 cover art">
+                <div class="game-info">
+                    <h2 class="game-title">Baldur's Gate 3</h2>
+                    <p class="game-details">
+                        Data de Lançamento: 3 de agosto de 2023<br>
+                        Plataformas: PC, PS5
+                    </p>
+                    <p class="game-description">A continuação do clássico RPG, com jogabilidade baseada em turnos e uma narrativa profunda. Ambientado no universo de Dungeons & Dragons, Baldur's Gate 3 oferece uma experiência rica em escolhas, consequências e combates táticos.</p>
+                    <a href="/jogos/baldurs-gate-3" class="read-more">Leia mais</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="https://example.com/mortal-kombat-1-cover.jpg" alt="Mortal Kombat 1 cover art">
+                <div class="game-info">
+                    <h2 class="game-title">Mortal Kombat 1</h2>
+                    <p class="game-details">
+                        Data de Lançamento: 19 de setembro de 2023<br>
+                        Plataformas: PC, PS5, Xbox Series X/S, Nintendo Switch
+                    </p>
+                    <p class="game-description">Um reinício da icônica série de luta, Mortal Kombat 1 traz gráficos de última geração, novos sistemas de combate e uma história reimaginada. Prepare-se para fatalities brutais e uma jogabilidade refinada.</p>
+                    <a href="/jogos/mortal-kombat-1" class="read-more">Leia mais</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <img src="https://example.com/lies-of-p-cover.jpg" alt="Lies of P cover art">
+                <div class="game-info">
+                    <h2 class="game-title">Lies of P</h2>
+                    <p class="game-details">
+                        Data de Lançamento: 19 de setembro de 2023<br>
+                        Plataformas: PC, PS5, Xbox Series X/S
+                    </p>
+                    <p class="game-description">Uma reimaginação sombria do conto de Pinóquio, Lies of P é um action RPG desafiador inspirado em jogos souls-like. Explore uma cidade gótica, enfrente inimigos mecânicos e descubra a verdade por trás das mentiras.</p>
+                    <a href="/jogos/lies-of-p" class="read-more">Leia mais</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Game Launch Hub. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            console.log('Página de Lançamentos Recentes - Carregada com sucesso!');
+            
+            // Efeito de fade-in para os game cards
+            const gameCards = document.querySelectorAll('.game-card');
+            gameCards.forEach((card, index) => {
+                card.style.opacity = 0;
+                setTimeout(() => {
+                    let opacity = 0;
+                    const fadeIn = setInterval(() => {
+                        if (opacity >= 1) {
+                            clearInterval(fadeIn);
+                        }
+                        card.style.opacity = opacity;
+                        opacity += 0.1;
+                    }, 50);
+                }, index * 200);
+            });
+
+            // Efeito de hover aprimorado para os game cards
+            gameCards.forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'scale(1.05) translateY(-10px)';
+                    card.style.boxShadow = '0 15px 30px rgba(0,255,0,0.3)';
+                });
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'scale(1) translateY(0)';
+                    card.style.boxShadow = 'none';
+                });
+            });
+
+            // Animação suave de scroll para os links "Leia mais"
+            const readMoreLinks = document.querySelectorAll('.read-more');
+            readMoreLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
